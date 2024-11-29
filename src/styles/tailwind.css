@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: #D40037;
+  --color-secondary: #9D9D9C;
+  --color-light: #ffffff;
+  --color-dark: #000000;
+}
+
+body {
+  @apply bg-gray-100;
+  font-family: "Arial", sans-serif;
+}
+
+/* Calendar customization */
+.rbc-calendar {
+  @apply text-gray-100;
+}
+
+.rbc-toolbar button {
+  @apply text-gray-100 border-gray-600 hover:bg-gray-700;
+}
+
+.rbc-toolbar button.rbc-active {
+  @apply bg-primary border-primary;
+}
+
+.rbc-header {
+  @apply text-gray-300 border-gray-700;
+}
+
+.rbc-today {
+  @apply bg-gray-700;
+}
+
+.rbc-off-range-bg {
+  @apply bg-gray-800;
+}
+
+.rbc-event {
+  @apply bg-primary border-primary;
+}
+
+.rbc-event.rbc-selected {
+  @apply bg-primary/80;
+}
+
+.rbc-day-bg + .rbc-day-bg {
+  @apply border-gray-700;
+}
+
+.rbc-month-row + .rbc-month-row {
+  @apply border-gray-700;
+}
+
+.rbc-time-content,
+.rbc-time-header-content {
+  @apply border-gray-700;
+}
+
+.rbc-time-header > .rbc-row:first-child {
+  @apply border-gray-700;
+}
+
+.rbc-timeslot-group {
+  @apply border-gray-700;
+}
+
+.rbc-time-slot {
+  @apply text-gray-400;
+}
